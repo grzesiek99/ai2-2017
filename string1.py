@@ -39,9 +39,9 @@ def both_ends(s):
 
   if len(s) < 2:
     return ' '
-  first2 = s[0:2]
-  last2 = s[-2]
-  return first2 + last2
+  first = s[0:2]
+  last = s[-2]
+  return first + last
 
 
 # C. fix_start
@@ -54,7 +54,8 @@ def both_ends(s):
 # Hint: s.replace(stra, strb) returns a version of string s
 # where all instances of stra have been replaced by strb.
 def fix_start(s):
-  # +++your code here+++
+  #first = s[0]
+  #last
   return
 
 
@@ -77,13 +78,13 @@ def test(got, expected):
     prefix = ' OK '
   else:
     prefix = '  X '
-  print '%s got: %s expected: %s' %(prefix, repr(got), repr(expected))
+  print( '%s got: %s expected: %s' %(prefix, repr(got), repr(expected)))
 
 
 # Provided main() calls the above functions with interesting inputs,
 # using test() to check if each result is correct or not.
 def main():
-  print 'donuts'
+  print ('donuts')
   # Each line calls donuts, compares its result to the expected for that call.
   test(donuts(4), 'Number of donuts: 4')
   test(donuts(9), 'Number of donuts: 9')
@@ -91,7 +92,7 @@ def main():
   test(donuts(99), 'Number of donuts: many')
 
   print
-  print 'both_ends'
+  print( 'both_ends')
   test(both_ends('spring'), 'spng')
   test(both_ends('Hello'), 'Helo')
   test(both_ends('a'), '')
@@ -99,14 +100,14 @@ def main():
 
   
   print
-  print 'fix_start'
+  print ('fix_start')
   test(fix_start('babble'), 'ba**le')
   test(fix_start('aardvark'), 'a*rdv*rk')
   test(fix_start('google'), 'goo*le')
   test(fix_start('donut'), 'donut')
 
   print
-  print 'mix_up'
+  print ('mix_up')
   test(mix_up('mix', 'pod'), 'pox mid')
   test(mix_up('dog', 'dinner'), 'dig donner')
   test(mix_up('gnash', 'sport'), 'spash gnort')
