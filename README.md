@@ -301,3 +301,35 @@ nums: (4, 6, 'z')
 indent: True
 spaces: 0
 options: {'b': 'x', 'a': [4, 5]}
+```
+Lab4.py
+```
+>>> gcd(2,2)
+2
+>>> gcd(2,5)
+1
+>>> lcm(2,2)
+2
+>>> lcm(2,8)
+8
+>>> 
+```
+Lab4b.py
+```
+>>> fact(3)
+6
+>>> fact(7)
+5040
+>>> 
+```
+Lab4c.py
+```
+['PyThOn', 'wOrLD']
+>>> 
+```
+Lab4d.py
+```
+>>> generate_triangles()
+<generator object generate_triangles at 0x02E24900>
+```
+
