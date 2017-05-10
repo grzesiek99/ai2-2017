@@ -331,5 +331,9 @@ Lab4d.py
 ```
 >>> generate_triangles()
 <generator object generate_triangles at 0x02E24900>
+>>> triangles_under(5)
+0
+1
+3
 ```
 
